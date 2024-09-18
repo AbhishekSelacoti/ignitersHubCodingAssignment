@@ -3,7 +3,12 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    // Kindly copy paste a code which has been sent over mail and then run the program
+    type: 'OAuth2',
+    user: 'USE_YOUR_OWN_CREDENTIALS',
+    pass: 'USE_YOUR_OWN_CREDENTIALS',
+    clientId: 'USE_YOUR_OWN_CREDENTIALS',
+    clientSecret: 'USE_YOUR_OWN_CREDENTIALS',
+    refreshToken: 'USE_YOUR_OWN_CREDENTIALS'
   }
 });
 
